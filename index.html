@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اختصاري</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+
+        * {
+            font-family: "Google Sans", sans-serif;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(white, rgb(222, 237, 255));
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+        }
+
+        header {
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        header>a {
+            color: black;
+            text-decoration: none;
+        }
+
+        header>input[type="checkbox"] {
+            scale: 1.5;
+        }
+
+        .Header>span {
+            color: rgb(64, 107, 248);
+        }
+
+        .Header {
+            justify-self: center;
+            margin-top: 50px;
+            opacity: 0;
+            animation: fadeinout 0.6s ease-out forwards;
+        }
+
+        h5 {
+            justify-self: center;
+            margin-top: 5px;
+            margin-bottom: 50px;
+            color: rgb(53, 53, 53);
+            opacity: 0;
+            animation: fadeinout 0.6s ease-out forwards;
+            animation-delay: 0.4s;
+        }
+
+        .container {
+            width: min(90%, 1100px);
+            height: fit-content;
+            margin-inline: auto;
+            padding: 32px;
+            border: 3px solid rgb(227, 227, 227);
+            border-radius: 20px;
+            background-color: rgb(232, 232, 232);
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            opacity: 0;
+            animation: fadeinout 0.6s ease-out forwards;
+            animation-delay: 0.6s;
+        }
+
+        .container>a {
+            background-color: white;
+            padding: 20px;
+            max-width: 230px;
+            min-height: 150px;
+            border-radius: 16px;
+            align-content: center;
+            cursor: pointer;
+            transition-duration: 0.5s;
+            border: 3px dashed rgb(212, 212, 212);
+            text-decoration: none;
+            color: black;
+        }
+
+        .container>a:first-child {
+            flex: 1;
+        }
+
+        .container>a:hover {
+            transform: translateY(-5px);
+            border: 3px dashed rgb(64, 107, 248);
+            
+        }
+
+        .container>a>svg {
+            fill: black;
+        }
+
+        .container>a>h2 {
+            font-size: 20px;
+        }
+
+        .container>a>p {
+            gap: 2px;
+            transform: translateY(10px);
+        }
+
+        .container>a>p>span{
+            padding: 6px;
+            border-radius: 24px;
+            font-size: 10px;
+            color: black;
+        }
+
+        .span-g {
+            background-color: #07bc0d8d;
+        }
+
+        .span-r {
+            background-color: #ff5a288d;
+        }
+
+        .span-b {
+            background-color: #3a8cff8d;
+        }
+
+        .hero1 {
+            width: min(90%, 1100px);
+            height: fit-content;
+            margin-top: 20px;
+            margin-inline: auto;
+            padding: 32px;
+            border-radius: 20px;
+            background-color: rgb(232, 232, 232);
+            gap: 16px;
+            opacity: 0;
+            animation: fadeinout 0.6s ease-out forwards;
+            animation-delay: 0.8s;
+            border: 3px solid rgb(227, 227, 227);
+        }
+
+        .container>a>p {
+            font-weight: 700;
+        }
+        footer {
+            opacity: 0;
+            animation: fadeinout 0.6s ease-out forwards;
+            animation-delay: 1s;
+        }
+        footer>a {
+            color: black;
+        }
+        @media screen and (max-width: 600px) {
+            header {
+                font-size: 15px;
+            }
+
+            .Header {
+                font-size: 21px;
+            }
+            .container>a {
+                width: 300px;
+            }
+            .container {
+                justify-content: center;
+            }
+        }
+        @keyframes fadeinout {
+            0% {
+                opacity: 0;
+                transform: translateY(10px);
+                filter: blur(3px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0px);
+                filter: blur(0px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><h1>اختصاري#</h1></a>
+    </header>
+
+    <h1 class="Header">تحتاج بنك من مصادر تعليمية؟ <span>اختصاري</span></h1>
+    <h5>مجمع مصادر تعليمية بلا تشتيت</h5>
+
+    /*popup*/
+    <div popover="manual" ></div>
+
+    <div class="container">
+        <a href="https://schools.madrasati.sa/" rel="noreferrer" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24px" width="24px" fill="#e3e3e3">
+                <path
+                    d="M14,9.9V8.2q0.83-0.35 1.69-0.52T17.5,7.5q0.65,0 1.28,0.1T20,7.85v1.6q-0.6-0.22-1.21-0.34T17.5,9q-0.95,0-1.82,0.24Q14.8,9.48 14,9.9Zm0,5.5V13.7q0.83-0.35 1.69-0.53T17.5,13q0.65,0 1.28,0.1T20,13.35v1.6q-0.6-0.22-1.21-0.34T17.5,14.5q-0.95,0-1.82,0.22T14,15.4Zm0-2.75v-1.7q0.83-0.35 1.69-0.53t1.81-0.17q0.65,0 1.28,0.1T20,10.6v1.6q-0.6-0.22-1.21-0.34T17.5,11.75q-0.95,0-1.82,0.24Q14.8,12.23 14,12.65ZM6.5,16q1.18,0 2.29,0.26T11,17.05V7.2Q9.98,6.6 8.83,6.3T6.5,6Q5.6,6 4.71,6.18T3,6.7v9.9q0.88-0.3 1.74-0.45T6.5,16ZM13,17.05q1.1-0.53 2.21-0.79T17.5,16q0.9,0 1.76,0.15T21,16.6V6.7q-0.82-0.35-1.71-0.52T17.5,6q-1.18,0-2.32,0.3T13,7.2v9.85ZM12,20q-1.2-0.95-2.6-1.48T6.5,18q-1.05,0-2.06,0.27T2.5,19.05q-0.52,0.27-1.01-0.03Q1,18.73 1,18.15V6.1Q1,5.82 1.14,5.57Q1.28,5.32 1.55,5.2Q2.7,4.6 3.95,4.3T6.5,4Q7.95,4 9.34,4.38T12,5.5q1.28-0.75 2.66-1.13T17.5,4q1.3,0 2.55,0.3t2.4,0.9q0.27,0.13 0.41,0.38T23,6.1V18.15q0,0.58-0.49,0.88q-0.49,0.3-1.01,0.03q-0.92-0.5-1.94-0.78T17.5,18q-1.5,0-2.9,0.52T12,20ZM7,11.65Z" />
+            </svg>
+
+            <h2>منصة مدرستي</h2>
+            <p><span class="span-g">منصة حكومية تابعة لوزارة التعليم</span></p>
+        </a>
+
+        <a href="https://sahl.io/sa" rel="noreferrer" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24px" width="24px" fill="#e3e3e3">
+                <path
+                    d="M14.74,14.69q0.31-0.31 0.31-0.74t-0.31-0.74T14,12.9t-0.74,0.31t-0.31,0.74t0.31,0.74T14,15t0.74-0.31ZM13.25,11.8h1.5q0-0.72 0.15-1.06t0.7-0.89q0.75-0.75 1-1.21t0.25-1.09q0-1.13-0.79-1.84Q15.28,5 14,5q-1.02,0-1.79,0.57T11.15,7.1L12.5,7.65q0.23-0.63 0.61-0.94T14,6.4q0.6,0 0.98,0.34q0.38,0.34 0.38,0.91q0,0.35-0.2,0.66T14.45,9.1q-0.83,0.72-1.01,1.14T13.25,11.8ZM8,18q-0.82,0-1.41-0.59T6,16V4Q6,3.17 6.59,2.59T8,2H20q0.83,0 1.41,0.59T22,4V16q0,0.82-0.59,1.41T20,18H8Zm0-2H20V4H8V16ZM4,22q-0.82,0-1.41-0.59T2,20V6H4V20H18v2H4ZM8,4V16V4Z" />
+            </svg>
+            <h2>منصة سهل</h2>
+            <p><span class="span-r">شروحات مجانية</span></p>
+        </a>
+
+        <a href="https://www.ien.edu.sa/Home/Dashbord#/" rel="noreferrer" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24px" width="24px" fill="#e3e3e3">
+                <path
+                    d="M11,17h2V11H11v6Zm1.71-8.29Q13,8.42 13,8q0-0.43-0.29-0.71T12,7T11.29,7.29T11,8q0,0.42 0.29,0.71T12,9t0.71-0.29ZM12,22q-2.07,0-3.9-0.79q-1.82-0.79-3.17-2.14Q3.58,17.73 2.79,15.9T2,12Q2,9.92 2.79,8.1Q3.58,6.27 4.93,4.93Q6.28,3.57 8.1,2.79Q9.93,2 12,2t3.9,0.79t3.17,2.14q1.35,1.35 2.14,3.17Q22,9.92 22,12t-0.79,3.9t-2.14,3.17q-1.35,1.35-3.17,2.14T12,22Zm0-2q3.35,0 5.68-2.32T20,12T17.68,6.32T12,4T6.33,6.32T4,12t2.33,5.68T12,20Zm0-8Z" />
+            </svg>
+            <h2>بوابة عين الاثرائية</h2>
+            <p><span class="span-g">المناهج تعليمية</span></p>
+        </a>
+
+
+        <a href="https://sa.afedne.com/" rel="noreferrer" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24px" width="24px" fill="#e3e3e3">
+                <path
+                    d="M12,22.5q-1.8-1.7-4.13-2.6T3,19V8Q5.53,8 7.85,8.91T12,11.55q1.83-1.72 4.15-2.64T21,8V19q-2.57,0-4.89,0.9T12,22.5Zm0-2.6q1.58-1.17 3.35-1.88q1.77-0.7 3.65-0.92V10.2q-1.82,0.32-3.59,1.31T12,14.15q-1.65-1.65-3.41-2.64Q6.83,10.52 5,10.2v6.9q1.88,0.22 3.65,0.92q1.78,0.7 3.35,1.88ZM9.18,7.82Q8,6.65 8,5T9.18,2.17T12,1t2.83,1.17T16,5T14.83,7.82T12,9T9.18,7.82Zm4.24-1.41Q14,5.82 14,5q0-0.83-0.59-1.41T12,3T10.59,3.59T10,5q0,0.82 0.59,1.41T12,7t1.41-0.59ZM12,5Zm0,9.15Z" />
+            </svg>
+            <h2>منصة افدني السعودية</h2>
+            <p><span class="span-b">ملازم وامتحانات مركزية</span></p>
+        </a>
+
+        <a href="https://beadaya.com/tests/" rel="noreferrer" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24px" width="24px" fill="#e3e3e3"><path d="M11,17.05V7.2Q9.98,6.6 8.83,6.3T6.5,6Q5.6,6 4.71,6.18T3,6.7v9.9q0.88-0.3 1.74-0.45T6.5,16q1.18,0 2.29,0.26T11,17.05ZM12,20q-1.2-0.95-2.6-1.48T6.5,18q-1.05,0-2.06,0.27T2.5,19.05q-0.52,0.27-1.01-0.03Q1,18.73 1,18.15V6.1Q1,5.82 1.14,5.57Q1.28,5.32 1.55,5.2Q2.7,4.6 3.95,4.3T6.5,4Q8.35,4 9.65,4.42t2.8,1.3q0.28,0.15 0.41,0.35T13,6.6V17.05q1.1-0.53 2.21-0.79T17.5,16q0.9,0 1.76,0.15T21,16.6V4.57q0.38,0.13 0.74,0.27T22.45,5.2q0.27,0.13 0.41,0.38T23,6.1V18.15q0,0.58-0.49,0.88q-0.49,0.3-1.01,0.03q-0.92-0.5-1.94-0.78T17.5,18q-1.5,0-2.9,0.52T12,20Zm3.5-6V3l3-1V13l-3,1ZM7,11.52Z"/></svg>
+            <h2>موقع بداية</h2>
+            <p><span class="span-b">اوراق عمل</span> <span class="span-r">شروحات مجانية</span></p>
+        </a>
+
+        <a href="https://www.wajibatis.com/" rel="noreferrer" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24px" width="24px" fill="#e3e3e3"><path d="M6.75,22q-1.13,0-1.94-0.76T4,19.35V5.4Q4,4.45 4.59,3.7T6.13,2.75L16,0.8v16L6.53,18.7Q6.3,18.75 6.15,18.94T6,19.35q0,0.27 0.23,0.46T6.75,20H18V4h2V22H6.75ZM9,16.18l5-0.98V3.25L9,4.22V16.18Zm-2,0.4V4.63L6.63,4.7Q6.35,4.75 6.18,4.94T6,5.4V16.83q0.13-0.05 0.26-0.09t0.26-0.06L7,16.58ZM6,4.77V16.83V4.77Z"/></svg>
+            <h2>منصة واجباتي</h2>
+            <p><span class="span-r">كتب حل</span> <span class="span-b">اختبارات</span></p>
+        </a>
+
+        <a href="https://www.hululktaab.com/" rel="noreferrer" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24px" width="24px" fill="#e3e3e3"><path d="M4,20q-0.82,0-1.41-0.59T2,18V6Q2,5.18 2.59,4.59T4,4H20q0.83,0 1.41,0.59Q22,5.18 22,6V18q0,0.82-0.59,1.41T20,20H4Zm0-2h7V6H4V18Zm9,0h7V6H13V18Zm1-3h5V13.5H14V15Zm0-2.5h5V11H14v1.5ZM14,10h5V8.5H14V10ZM4,18V6V18Z"/></svg>
+            <h2>منصة حلول</h2>
+            <p><span class="span-r">كتب حل</span></p>
+        </a>
+    </div>
+
+    <div class="hero1">
+        <h1>إخلاء المسؤولية</h1>
+        <br>
+        <h3>اختصاري مشروع مستقل يسهّل وصول الطلاب إلى المصادر والمنصات التعليمية، ولا يستضيف أو يعيد نشر محتواها، فجميع المواد والروابط الخارجية مملوكة لأصحابها، ولا يدّعي الموقع ملكيتها أو التبعية لوزارة التعليم أو لأي منصة، ويرحب بتواصل أصحاب الحقوق بشأن أي ملاحظة تتعلق بروابطه.</h3>
+    </div>
+    <footer style="margin: 32px 0 16px; text-align: center;">صنعها عبدالرحمن وللتواصل <a href="mailto:abdulrahmanaljafry@yahoo.com">abdulrahmanaljafry@yahoo.com</a></footer>
+</body>
+
+</html>
